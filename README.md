@@ -4,10 +4,10 @@ This is my personal portfolio website built with HTML and CSS. It showcases my s
 
 **Features**
 
-✅ Responsive design
-✅ About Me section
-✅ Projects showcase
-✅ Contact details
+ Responsive design
+ About Me section
+ Projects showcase (Portfolio)
+ Contact details
 
 **Technologies Used**
 
@@ -17,11 +17,11 @@ CSS3
 
 **Live Demo**
 
-https://yourusername.github.io/portfolio/
+https://github.com/Karabelon/Karabelon.portfolio.git
 
 **How to View Locally**
 
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/Karabelon/Karabelon.portfolio.git
 
 Open home.html in a browser.
 
