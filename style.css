@@ -238,3 +238,65 @@ color:white;
 font-family: sans-serif;
 font-size: medium;   
 }
+
+/* --- Global responsiveness --- */
+*, *::before, *::after { box-sizing: border-box; }
+html { font-size: 100%; }
+body { line-height: 1.5; overflow-x: hidden; }
+img { max-width: 100%; height: auto; display: block; }
+
+/* --- Navigation --- */
+#tabs { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+#tabs ul { display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 0; }
+#tabs ul li { list-style: none; position: static; }
+#tabs ul li a { display: inline-block; padding: .5rem .75rem; }
+
+/* --- Kill rigid positioning that breaks on phones --- */
+#wallpaper img { position: static; width: 60%; max-width: 420px; margin: 1rem auto; }
+#logo img, #plogo img { float: none; width: 100%; max-width: 380px; height: auto; margin: 1rem auto; }
+
+/* --- Tame huge fixed margins --- */
+#header h1,
+#name h3,
+#bio h4,
+#po h3,
+#cont { margin: 1rem 1rem 0 1rem; }
+.sub-title { margin-left: 1rem; }
+
+/* --- Cards/grid --- */
+#BOX {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1rem;
+  max-width: 1100px;
+}
+
+/* --- Typography scaling --- */
+#Inbox h2 { font-size: 1.25rem; }
+#Inbox p, #Inbox a { font-size: 1rem; }
+
+/* ================== BREAKPOINTS ================== */
+/* Phones */
+@media (max-width: 480px) {
+  #tab-links { font-size: 1rem; }
+  #name h3 { margin: 1rem; font-size: 1.125rem; }
+  #bio h4 { margin-top: 1.25rem; font-size: 1rem; }
+  #po h3 { margin-top: 1rem; }
+  #main-home img { margin-top: 1rem; } /* was 179px */
+  #plogo ul li, #pfilm ul li { margin-right: 0; }
+}
+
+/* Tablets & up */
+@media (min-width: 768px) {
+  /* Optional: side-by-side hero if you have image + text */
+  .hero, #main-home { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
+  #wallpaper img { width: 40%; margin: 0; }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+  #header h1 { margin-left: 3rem; }
+  #BOX { margin-inline: auto; }
+}
+
